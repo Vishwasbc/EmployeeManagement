@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
-public interface EmployeeService {
+import com.example.demo.model.Employee;
 
+public interface EmployeeService {
+	public abstract String addEmployee(Employee emp);
 }
