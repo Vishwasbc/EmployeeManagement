@@ -2,8 +2,6 @@ package com.example.demo.model;
 
 import java.sql.Date;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import jakarta.persistence.Entity;
@@ -13,11 +11,11 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 @Data
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
